@@ -1,3 +1,10 @@
-<p>
-  beverage works!
-</p>
+
+<div class="child">
+  <h2>Child Component</h2>
+  <p>Todays beverage: <strong>{{beverage}}</strong></p>
+  <hr>
+  <label for="beverage-input">Add New Beverage</label>
+  <input type="text" id="beverage-input" #newBeverage>
+  <!-- <button (click)="addNewBeverage(newBeverage.value); newBeverage.value=''">Add</button> -->
+  <button (click)="addNewBeverage(newBeverage.value);">Add</button>
+</div>
